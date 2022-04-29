@@ -9,7 +9,11 @@ a {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
+p {
+    margin-left: 20px;
+}
 body {
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,37 +25,42 @@ header {
     padding-top: 55px;
 }
 header h1 {
-    text-transform: uppercase;
+    font-variant: small-caps;
     font-weight: bolder;
     font-family: 'Passion One', cursive;
-    font-size: 3.5em;
+    font-size: 10vh;
     padding-bottom: 10px;
 }
-section.normal {
-    margin: 60px 30px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 10px;
+    font-family: 'Sriracha', cursive;
+    font-size: 3.5vh;
 }
 section p {
-    font-size: 24px;
-    font-family: 'Sriracha', cursive;
+    padding-bottom: 1em;
 }
-section.fundo1 {
-    height: 450px;
-    color: #fff;
-    background-size: 510px;
-    background: #fff url(imagens/background001.jpg) center center no-repeat fixed;
+section.fundo {
+    color: #fff;  
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.511);    
 }
-section.fundo1 p, section.fundo2 p {
+section.fundo p {
     background-color: rgba(0, 0, 0, 0.422);
-    width: 50%;
-    margin-left: 20px;
-    padding-bottom: 20px;
+    display: inline-block; 
+    padding: 10px; 
+    border-radius: 10px;
 }
-section.fundo2 {
-    height: 400px;
-    
-    color: #fff;
-    background: #fff url(imagens/background002.jpg) center center no-repeat fixed;
+.fundo#image1 {
+    background: #fff url('../imagens/background001.jpg') right center no-repeat fixed;
+    background-size: cover;
 }
+.fundo#image2 {
+    background: #fff url('../imagens/background002.jpg') right center no-repeat fixed;
+    background-size: cover;
+}
+
 footer {
     background-color: black;
     color: #fff;
